@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="D:\Sublime Text\diseño web\programacion-com\html\estilos\html-estilo-basico.css">
+	<title>HTML-NoScript</title>
+</head>
+<body> 
+     <div class="container" >
+     	<div class="header">
+          <header>
+
+               <img class="img-header" src="D:\Sublime Text\diseño web\programacion-com\css\media\imagenes\icono-css.png">
+
+               <img class="img-header" src="D:\Sublime Text\diseño web\programacion-com\css\media\imagenes\icono-js.png">
+
+               <img class="img-header" src="D:\Sublime Text\diseño web\programacion-com\css\media\imagenes\icono-php.png">
+          </header>
+     	</div>
+
+     	<div class="aside-container">
+
+     	     <aside class="aside-left">
+                    <img class="img-header2" src="D:\Sublime Text\diseño web\programacion-com\css\media\imagenes\icono-html.png" usemap="#html">
+                 <map name="html">
+                 <area shape="rect" coords="50,50,150,150" href="D:\Sublime Text\diseño web\programacion-com\html\paginas\inicio-html.html">
+     	     <nav>
+                     <div class="Formularios-nav">
+          			<form class="form-header" action="search.php">
+                     <input class="input-text" type="text">
+                     <input class="input-buscar" type="submit" value="Buscar">
+                         </form>
+                    </div>
+               </nav>
+     		    <div class="accesos-rapidos">
+     		    	 <a class="a-aside-left" href="D:\Sublime Text\diseño web\programacion-com\inicio web.html">Inicio</a>
+                     <a class="a-aside-left" href="D:\Sublime Text\diseño web\programacion-com\html\paginas\inicio-html.html">Atras</a>
+                     <a class="a-aside-left" href="#title-nav">Que es noscript</a>
+                     <a class="a-aside-left" href="#ejemplo-nav">Ejemplo</a>
+                 </div>
+     	     </aside>
+
+          </div>
+
+     	<div class="container-article">
+     		<article>
+     		    <section class="info" id="inicio-nav">
+     		    	                                                
+
+     			<h2 class="h2-head">Elemento HTML <br> (<span><</span>noscript<span>></span>)</h2> 
+
+     			<h3 class="h3-head" id="title-nav">Que es <span><</span>noscript<span>></span></h3>
+
+                    <p>El elemento <span><</span><b class="color-rojo">noscript</b><span>></span> aporta contenidos alternativos al elemento <b>script</b>. Las aplicaciones de usuario que no soporten scripts deben mostrar en su lugar el contenido de este elemento.</p>
+
+                    <h3 class="h3-head">Uso:</h3>
+
+                    <p><span><</span><b class="color-rojo">noscript</b><span>></span> es un elemento en bloque. <b>Puede contener:</b> Uno o más elementos enbloque.</p>
+
+                    <h3 class="h3-head">atributos:</h3>
+                      
+                      <p>Este elemento contiene los atributos globales.</p>
+                     <div class="tabla">
+                      <table>
+                           <tr>
+                                <td>Atributo</td> <td>Descripción</td> <td>valor</td>
+                           </tr>
+
+                           <tr>
+                                <td>title</td> 
+                                <td>Texto informativo o titulo del elemento. Suele mostrarse a modo de "tool tip"</td> 
+                                <td>Texto legible por personas. Sensible a M/m. Por defecto; Lo fija el navegador.</td>
+                                
+                           </tr>
+
+                           <tr>
+                                <td>id</td> 
+                                <td>Le da un nombre al elemento que lo diferencia de todos los demás del documento.</td> 
+                                <td>Un nombre único. Sesible a M/m. Por defecto: Lo fija el navegador.</td>
+                                
+                           </tr>
+
+                           <tr>
+                                <td>class</td> 
+                                <td>Asigna nombres de clase al elemento. Por defecto, clases CSS.</td> 
+                                <td>Lista de clases separadas por espacion en blanco. Sensibles a M/m. Por defecto: Lo fija el navegador</td>
+                                
+                           </tr>
+
+                           <tr>
+                                <td>style</td> 
+                                <td>Permite especificar información de estilo. Por defecto, estilos CSS.</td> 
+                                <td>Declaraciones de estilo. Por defecto: Lo fija el navegador</td>
+                                
+                           </tr>
+
+                           <tr>
+                                <td>lang</td> 
+                                <td>Información sobre el idioma del contenido del elemento y del valor de sus atributos.</td> 
+                                <td>Un código de idioma. Por defecto: "desconocido". Lo fija el navegador</td>
+                                
+                           </tr>
+
+                           <tr>
+                                <td>dir</td> 
+                                <td>Indica la dirección de texto y tablas.</td> 
+                                <td>Uno de los siguientes: "ltr" o "rtl". Por defecto: En el castellado "ltr". Lo fija el navegador.</td>
+                                
+                           </tr>
+
+                           <tr>
+                                <td>Eventos: </td> 
+                                <td><b>onclick, ondblclick, onmousedown, onmouseup, onmouseover, onmousemove, onmouseout, onkeypress, onkeydown, onkeyup.</b></td> 
+                                
+                           </tr>
+                      </table>
+                 </div>
+
+                    <div class="box-ejemplos">
+                         <h3 class="h3-head" id="ejemplo-nav">Ejemplos:</h3>
+                         <div class="box-ejemplo-codigo">
+                                                         <h5>Código</h5>
+
+                    <ol>
+                        <li>
+                                <span><</span><b>html</b><span>></span> <br>
+                                <span><</span><b>head</b><span>></span> <br>
+
+                                <ol>
+                                     <span><</span><b>meta</b> charset="utf-8"<span>></span> <br>
+                                     <span><</span><b>meta</b> name="viewport" content="width=device-width, initial-scale=1"<span>></span> <br>
+                                     <span><</span><b>scripts</b> type="text/javascript"<span>></span><br>
+
+                                     <b>function</b> <b>calc</b>( ){<br>
+                                     <b>var</b> argOne<b>=</b><b>document</b>.<b>getElementById</b>(<b>'arg1'</b>).value;<br>
+
+                                     <b>var</b> argTwo<b>=</b><b>document</b>.<b>getElementById</b>(<b>'arg2'</b>).value;<br>
+
+                                     <b>var</b> ans<b>=</b>(argOne<b>=</b>argTwo);<br>
+
+                                     <b">document</b>.<b>getElementById</b>(<b>'result'</b>).innerHTML<b>=</b>argOne <b>+</b> <b>' multiplicado por '</b> <b>+</b> argTwo <b>+</b> <b>' es igual a '</b> <b>+</b> ans;<br>
+                                     }<br>
+                                     <span><</span>/<b>scripts</b><span>></span><br>
+                                     <span><</span><b class="color-rojo">noscripts</b><span>></span><br>
+                                      <span><</span><b>p</b><span>></span> Los scripts estan deshabilitados, porfavor cambiar de navegador. <span><</span>/<b>p</b><span>></span><br>
+                                     <span><</span>/<b class="color-rojo">noscripts</b><span>></span><br>
+                                   <span><</span><b>title</b><span>></span><span><</span>/<b>title</b><span>></span><br>
+                                </ol>
+
+                                <span><</span>/<b>head</b><span>></span> <br>
+                                <span><</span><b>body</b><span>></span> <br>
+                                 
+                                 <ol>
+                                      <lu><span><</span><b>h1</b><span>></span>               Calculadora
+                                         <span><</span>/<b>h1</b><span>></span>
+                                     </lu>
+                                      <lu>
+                                           <span><</span><b>input</b><span> type="text" id="arg1" size="1"></span>               x
+                                           <span><</span><b>input</b><span> type="text" id="arg2" size="1"></span><br>
+
+                                           <span><</span><b>input</b><span> type="button" value="Calcular!" onclick="calc( )"></span><br>
+
+                                           <span><</span><b>div</b> id="result"<span>></span>
+                                           <span><</span>/<b>div</b><span>></span>
+                                      </lu>
+                                      <lu></lu>
+                                      <lu></lu>
+                                 </ol>
+
+                                <span><</span>/<b>body</b><span>></span> <br>
+                                <span><</span><b>html</b><span>></span>
+                         </li>
+                    </ol>
+                         </div>
+                         <div class="box-ejemplo-visual">
+                                                         <h5>Como se veria:</h5>
+                                   <iframe class="ejemplo-de-web" src="D:\Sublime Text\diseño web\programacion-com\html\media\objetos\ejemplo-script.html">ejemplo</iframe>
+                         </div>
+                   </section>
+              </article>
+     	</div>
+
+     	<!---<div class="aside-raight">
+               <aside>
+               	<h3>Otros lenguajes de programacion</h3>
+
+               	<img class="img-aside-raight" src="D:\Sublime Text\diseño web\programacion-com\css\media\imagenes\icono-inicio.png">
+
+               	<img class="img-aside-raight" src="D:\Sublime Text\diseño web\programacion-com\css\media\imagenes\icono-css.png">
+
+               	<img class="img-aside-raight" src="D:\Sublime Text\diseño web\programacion-com\css\media\imagenes\icono-js.png">
+
+               	<img class="img-aside-raight" src="D:\Sublime Text\diseño web\programacion-com\css\media\imagenes\icono-php.png">
+               </aside>
+     	</div>--->
+     
+     	<div class="container-footer">
+     		<footer>
+     			<h5>Deep Doom <br> (Jeremias Franco) </h5>
+     		</footer>
+     	</div>
+     	
+     </div>
+
+
+</body>
+</html>

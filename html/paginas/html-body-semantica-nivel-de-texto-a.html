@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="D:\Sublime Text\diseño web\programacion-com\html\estilos\html-estilo-basico.css">
+	<title>HTML-semantica-nivel-de-texto-a</title>
+</head>
+<body> 
+     <div class="container" >
+     	<div class="header">
+          <header>
+
+               <img class="img-header" src="D:\Sublime Text\diseño web\programacion-com\css\media\imagenes\icono-css.png">
+
+               <img class="img-header" src="D:\Sublime Text\diseño web\programacion-com\css\media\imagenes\icono-js.png">
+
+               <img class="img-header" src="D:\Sublime Text\diseño web\programacion-com\css\media\imagenes\icono-php.png">
+          </header>
+     	</div>
+
+     	<div class="aside-container">
+
+     	     <aside class="aside-left">
+                    <img class="img-header2" src="D:\Sublime Text\diseño web\programacion-com\css\media\imagenes\icono-html.png" usemap="#html">
+                 <map name="html">
+                 <area shape="rect" coords="50,50,150,150" href="D:\Sublime Text\diseño web\programacion-com\html\paginas\inicio-html.html">
+     	     <nav>
+                     <div class="Formularios-nav">
+          			<form class="form-header" action="search.php">
+                     <input class="input-text" type="text">
+                     <input class="input-buscar" type="submit" value="Buscar">
+                         </form>
+                    </div>
+               </nav>
+     		    <div class="accesos-rapidos">
+     		    	 <a class="a-aside-left" href="D:\Sublime Text\diseño web\programacion-com\inicio web.html">Inicio</a>
+                     <a class="a-aside-left" href="D:\Sublime Text\diseño web\programacion-com\html\paginas\inicio-html.html">Atras</a>
+                     <a class="a-aside-left" href="#title-nav">Que es a</a>
+                     <a class="a-aside-left" href="#ejemplo-nav">Ejemplo</a>
+                 </div>
+     	     </aside>
+
+          </div>
+
+     	<div class="container-article">
+     		<article>
+     		    <section class="info" id="inicio-nav">
+     		    	                                                
+
+     			<h2 class="h2-head">Elemento HTML <br> (<span><</span>a<span>></span>)</h2> 
+
+     			<h3 class="h3-head" id="title-nav">Que es <span><</span>a<span>></span></h3>
+
+                    <p>El elemento <span><</span><b class="color-rojo">a</b><span>></span> Crea un enlace a otras páginas de internet, archivos o ubicaciones dentro de la misma página, direcciones de correo, o cualquier otra URL.</p>
+
+                    <h3 class="h3-head">Uso:</h3>
+
+                    <p>Acepta cualquier elemento que acepte contenido de párrafo o cualquier elemento que acepte contenido de flujo, sin embargo siempre excluyendo los elementos <span><</span><b class="color-rojo">a</b><span>></span> de acuerdo con el princípio lógico de simetria, si una etiqueta <span><</span><b class="color-rojo">a</b><span>></span> como padre, no puede contener contenido interactivo, entonces el mismo contenido de <span><</span><b class="color-rojo">a</b><span>></span> no puede tener una etiqueta <span><</span><b class="color-rojo">a</b><span>></span> como su padre.</p>
+
+                    <h3 class="h3-head">atributos:</h3>
+                    <p>Este elemento incluye los atributos globales.</p>
+                    <div class="tabla">
+                      <table>
+                           <tr>
+                                <td>Atributo</td> <td>Descripción</td>
+                           </tr>
+
+                           <tr>
+                                <td>dowload</td> 
+                                <td>Este atributo, indica descargar a los navegadores una URL en lugar de navegar hacia ella, por lo que el usuario será dirigido para salvarla como un archivo local. Si el atributo tiene un valor, éste se utilizara como nombre de archivo por defecto en el mensaje Guardar que se abre cuando el usuario hace clic en el enlace, sin embargo el usuario puede cambiar el nombre antes de guardar el archivo.</td> 
+                           </tr>
+
+                           <tr>
+                                <td>href</td> 
+                                <td>Contiene una URL o un fragmento de URL al cual apuntar el enlace.
+                                    Un fragmento de URL es un nombre "name" precedido por el simbolo de número #, el cual especifica una ubicación interna objetivo un ID de un elemento HTML dentro del documento. Las URLs no estánrestringidas sólo a documentos de internet basados en HTTP, sin embargo puede utilizar cualquier protocolo soportado por el navegador. Por ejemplo, file:, ftp: y mailto: funcionan en la mayoria de los navegadores.</td> 
+                           </tr>
+
+                           <tr>
+                                <td>hreflang</td> 
+                                <td>Este atributo indica el lenguaje humano del recurso al que se enlaza. Este es únicamente informativo, sin ninguna funcionalidad incorporada. Los valores permitidos están determinados por BCP47.</td>
+                           </tr>
+
+                           <tr>
+                                <td>referrerpolicy</td> 
+                                <td>Indica que rferencia rederer enviar cuando la URL es recuperada:<br>
+                          <br>
+                              "<b>no-referrer</b>" significa <b>referer</b>: el encabezado no será inviado.<br>
+                              <br>
+                              "<b>no-referrer-when-downgrade</b>" significa sin <b>referer</b>: el encabezado será enviado cuando se navega a un origen sin HTTPS. Este es un comportamiento por defecto.<br>
+                          <br>
+                              "<b>origin</b>" significa que el referrer estará em eñ progem <b>origin</b> de la página, no incluyente la información posteriror al dominio.<br>
+                          <br> 
+                              "<b>origin-when-cross-origin</b>" significa que la navegación a otros origenes será limitada al esquema, el host y el puerto, miestras que la navegación en el mismo origen incuirá la trayectoria de referencia.<br>
+                          <br>
+                              "<b>unsafe-url</b>" significa que la referencia incuirá el origen y la trayectoria, pero no el fragmento, contraseña o nombre de usuario. Esto es inseguro, ya que puede filtrar datos desde una URL segura hacia URLs inseguras.
+                               </td>
+                           </tr>
+
+                           <tr>
+                                <td>rel</td> 
+                                <td>Especifica en donde desplegar la URL enlazadas. Es un nombre, o palabra clave, un contexto de navegación una pestaña, ventana, o <span><</span><b>iframe</b><span>></span>. Las siguientes palabras clave tienen significado especial. <br>
+                                   <br>
+                              <b>_self</b>: Carga la URL en el mismo contexto de navegación que el actual. Este es el comportamiento por defecto.<br>
+                         <br>
+                              <b>_blank</b>: Carga la URL en un nuevo contexto de navegación. Usualmente es una pestaña, sin embargo, los usuarios pueden configurar los navegadores para utilizar para utilizar una ventana nueva en lugar de la pestaña.<br>
+                         <br> 
+                              <b>_parent</b>: Carga la URL en el contexto de navegación padre del actual. Si no existe el padre, este se comporta del mismo modo que <b>_self</b>.<br>
+                         <br>
+                              <b>_top</b>: Carga la URL en el contexto más alto de navegación el cual es un ancestro del actual, y no tiene padre. Si no hay padre, este se comporta del mismo modo que <b>_self</b>.
+                                </td> 
+                           </tr>
+
+                           <tr>
+                                <td>type</td> 
+                                <td>Especifica el tipo de medio en la forma de MIME para la URL enlazada. Esto es únicamente informativo, sin ninguna funcionalidad incorporada.</td> 
+                           </tr>
+
+                           <tr>
+                                <td>charset</td> 
+                                <td>Este atributo define la codificación de caracteres de la URL enlazada. El valor debe de ser una lista delimitada por espacio y/o coma de caracteres definidos en RFC 2045. El valor por defecto es ISO-8859-1.</td> 
+                           </tr>
+
+                           <tr>
+                                <td>coords</td> 
+                                <td>Para utilizar con el siguiente atributo <b>shape</b>, este atributo utiliza una lista de números separada por comas para definir las coordenadas del enlace en la página.</td> 
+                           </tr>
+
+                           <tr>
+                                <td>name</td> 
+                                <td>Este atributo era requerido para anclas que definian una posible ubicación dentro de la página. En HTML 4.01, <b>id</b> y <b>name</b> podrian ser utilizados simultáneamente en un elemento <span><</span><b>a</b><span>></span> simpre y cuando tuvieran valores idénticos.</td> 
+                           </tr>
+
+                           <tr>
+                               <td>Eventos:</td>
+                               <td><b>onclik</b>, <b>ondblclick</b>, <b>onmousedown</b>, <b>onmouseup</b>, <b>onmouseover</b>, <b>onmousemove</b>, <b>onmouseout</b>, <b>onkeypress</b>, <b>onkeydown</b>, <b>onkeyup</b></td>
+                           </tr>
+                      </table>
+                    </div>
+                    <div class="box-ejemplos">
+                         <h3 class="h3-head" id="ejemplo-nav">Ejemplos:</h3>
+                         <div class="box-ejemplo-codigo">
+                                                         <h5>Código</h5>
+
+                    <ol>
+                        <li>
+                                <span><</span><b>html</b><span>></span> <br>
+                                <span><</span><b>head</b><span>></span> <br>
+
+                                <ol>
+                                     <span><</span><b>meta</b> charset="utf-8"<span>></span> <br>
+                                     <span><</span><b>meta</b> name="viewport" content="width=device-width, initial-scale=1"<span>></span> <br>
+                                     <span><</span><b>title</b><span>></span> <span><</span>/<b>title</b><span>></span><br>
+                                </ol>
+
+                                <span><</span>/<b>head</b><span>></span> <br>
+                                <span><</span><b>body</b><span>></span> <br>
+                                 
+                                 <ol>
+                                    <li>
+                                      <span><</span><b class="color-rojo">a</b><span> href="web-inicio.html"></span>HTML<span><</span>/<b class="color-rojo">a</b><span>></span><br>  
+                                   </li>
+                                 </ol>
+
+                                <span><</span>/<b>body</b><span>></span> <br>
+                                <span><</span><b>html</b><span>></span>
+                         </li>
+                    </ol>
+                         </div>
+                         <div class="box-ejemplo-visual">
+                                                         <h5>Como se veria:</h5>
+                                   <iframe class="ejemplo-de-web" src="D:\Sublime Text\diseño web\programacion-com\html\media\objetos\ejemplo-a.html">ejemplo</iframe>
+                         </div>
+                    </div>
+        
+                   <b></b>
+                   </section>
+              </article>
+     	</div>
+
+     	<!---<div class="aside-raight">
+               <aside>
+               	<h3>Otros lenguajes de programacion</h3>
+
+               	<img class="img-aside-raight" src="D:\Sublime Text\diseño web\programacion-com\css\media\imagenes\icono-inicio.png">
+
+               	<img class="img-aside-raight" src="D:\Sublime Text\diseño web\programacion-com\css\media\imagenes\icono-css.png">
+
+               	<img class="img-aside-raight" src="D:\Sublime Text\diseño web\programacion-com\css\media\imagenes\icono-js.png">
+
+               	<img class="img-aside-raight" src="D:\Sublime Text\diseño web\programacion-com\css\media\imagenes\icono-php.png">
+               </aside>
+     	</div>--->
+     
+     	<div class="container-footer">
+     		<footer>
+     			<h5>Deep Doom <br> (Jeremias Franco) </h5>
+     		</footer>
+     	</div>
+     	
+     </div>
+
+
+</body>
+</html>

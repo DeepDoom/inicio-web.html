@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="D:\Sublime Text\diseño web\programacion-com\html\estilos\html-estilo-basico.css">
+	<title>HTML-secciones-article</title>
+</head>
+<body> 
+     <div class="container" >
+     	<div class="header">
+          <header>
+
+               <img class="img-header" src="D:\Sublime Text\diseño web\programacion-com\css\media\imagenes\icono-css.png">
+
+               <img class="img-header" src="D:\Sublime Text\diseño web\programacion-com\css\media\imagenes\icono-js.png">
+
+               <img class="img-header" src="D:\Sublime Text\diseño web\programacion-com\css\media\imagenes\icono-php.png">
+          </header>
+     	</div>
+
+     	<div class="aside-container">
+
+     	     <aside class="aside-left">
+                    <img class="img-header2" src="D:\Sublime Text\diseño web\programacion-com\css\media\imagenes\icono-html.png" usemap="#html">
+                 <map name="html">
+                 <area shape="rect" coords="50,50,150,150" href="D:\Sublime Text\diseño web\programacion-com\html\paginas\inicio-html.html">
+     	     <nav>
+                     <div class="Formularios-nav">
+          			<form class="form-header" action="search.php">
+                     <input class="input-text" type="text">
+                     <input class="input-buscar" type="submit" value="Buscar">
+                         </form>
+                    </div>
+               </nav>
+     		    <div class="accesos-rapidos">
+     		    	 <a class="a-aside-left" href="D:\Sublime Text\diseño web\programacion-com\inicio web.html">Inicio</a>
+                     <a class="a-aside-left" href="D:\Sublime Text\diseño web\programacion-com\html\paginas\inicio-html.html">Atras</a>
+                     <a class="a-aside-left" href="#title-nav">Que es article</a>
+                     <a class="a-aside-left" href="#ejemplo-nav">Ejemplo</a>
+                 </div>
+     	     </aside>
+
+          </div>
+
+     	<div class="container-article">
+     		<article>
+     		    <section class="info" id="inicio-nav">
+     		    	                                                
+
+     			<h2 class="h2-head">Elemento HTML <br> (<span><</span>article<span>></span>)</h2> 
+
+     			<h3 class="h3-head" id="title-nav">Que es <span><</span>article<span>></span></h3>
+
+                    <p>El elemento HTML <span><</span><b class="color-rojo">article</b><span>></span> representa una composición auto-contenida en un documento, página, una aplicación o en el sitio, que se destina a distribuir de forma independiente o reutilizable, por ejemeplo, en la indicación. Podria ser un mensaje en un foro, un articulo de revista o un periódico, una entrada de blog, un comentario de usuario, un widget interactivo o gadget, o cualquier otro elemento independiente del contenido.</p>
+
+                    <h3 class="h3-head">Uso:</h3>
+
+                    <p> Cuando los elementos <span><</span><b class="color-rojo">article</b><span>></span> están anidados, los internos representan articulos relacionados con el exterior. Por ejemplo, los comentarios de un blog puede ser elementos <span><</span><b class="color-rojo">article</b><span>></span> anidados al que representa la entrada del blog.</p>
+
+                    <p> Los datos del autor de un elemento <span><</span><b class="color-rojo">article</b><span>></span> pueden ser proporcionados a través del elemento <span><</span>address<span>></span>, pero no se aplica a los elementos <span><</span><b class="color-rojo">article</b><span>></span> anidados.</p>
+
+                    <p>La fecha de publicación y el tiempo de un elemento <span><</span><b class="color-rojo">article</b><span>></span> pueden ser descritos con el atributo <b>pubdate</b> atributo de un elemento <span><</span>time<span>></span>.</p>
+
+                    <h3 class="h3-head">atributos:</h3>
+                      
+                      <p>Este elemento sólo inlcuye atributos globales.</p>
+
+                      <a href="">Atributos Globales</a>
+
+                    <div class="box-ejemplos">
+                         <h3 class="h3-head" id="ejemplo-nav">Ejemplos:</h3>
+                         <div class="box-ejemplo-codigo">
+                                                         <h5>Código</h5>
+
+                    <ol>
+                        <li>
+                                <span><</span><b>html</b><span>></span> <br>
+                                <span><</span><b>head</b><span>></span> <br>
+
+                                <ol>
+                                     <span><</span><b>meta</b> charset="utf-8"<span>></span> <br>
+                                     <span><</span><b>meta</b> name="viewport" content="width=device-width, initial-scale=1"<span>></span> <br>
+                                     <span><</span><b>title</b><span>></span> <span><</span>/<b>title</b><span>></span><br>
+                                </ol>
+
+                                <span><</span>/<b>head</b><span>></span> <br>
+                                <span><</span><b>body</b><span>></span> <br>
+                                 
+                                 <ol>
+                                   <span><</span><b>section</b><span>></span><br>
+
+                                   <span><</span><b>h1</b><span>></span>
+                                   Autos
+                                   <span><</span>/<b>h1</b><span>></span><br>
+
+                                   <span><</span><b>p</b><span>></span>
+                                   Los autos mas rapidos del mundo.
+                                   <span><</span>/<b>p</b><span>></span><br>
+
+                                   <ul>
+                                        <span><</span><b class="color-rojo">article</b><span>></span><br>
+                                        <span><</span><b>h2</b><span>></span>
+                                        Bugatti Chiron Super Sport 300+
+                                        <span><</span>/<b>h2</b><span>></span><br>
+                                        <span><</span><b>img</b> src="imagenes\Bugatti Chiron Super Sport 300+.jpg"<span>></span><br>
+                                        <span><</span><b>p</b><span>></span>
+                                        Esta es la versión 1.600 CV en su W16 y una carroceria alargada entre otras mejoras del Bugatti Chiron consiguió en 2019 rozar los 500km/h.
+                                        <span><</span>/<b>p</b><span>></span><br>
+                                        <span><</span>/<b class="color-rojo">article</b><span>></span><br>
+
+                                        <span><</span><b class="color-rojo">article</b><span>></span><br>
+                                        <span><</span><b>h3</b><span>></span>
+                                        SSC Tuatara
+                                        <span><</span>/<b>h3</b><span>></span><br>
+                                        <span><</span><b>img</b> src="imagenes\SSC Tuatara.jpg"<span>></span><br>
+                                        <span><</span><b>p</b><span>></span>
+                                        La creación de SSC North America obtuvo oficialmente el Récord Guinness que le acredita con ese titulo el año pasado tras alcanzar una marca oficial de 455.28 km/h.
+                                        <span><</span>/<b>p</b><span>></span><br>
+                                        <span><</span>/<b class="color-rojo">article</b><span>></span><br>
+
+                                   </ul>
+
+                                   <span><</span>/<b>section</b><span>></span><br>
+                                      
+                                 </ol>
+
+                                <span><</span>/<b>body</b><span>></span> <br>
+                                <span><</span><b>html</b><span>></span>
+                         </li>
+                    </ol>
+                         </div>
+                         <div class="box-ejemplo-visual">
+                                                         <h5>Como se veria:</h5>
+                                   <iframe class="ejemplo-de-web" src="D:\Sublime Text\diseño web\programacion-com\html\media\objetos\ejemplo-article.html">ejemplo</iframe>
+                         </div>
+                    </div>
+                   </section>
+              </article>
+     	</div>
+
+     	<!---<div class="aside-raight">
+               <aside>
+               	<h3>Otros lenguajes de programacion</h3>
+
+               	<img class="img-aside-raight" src="D:\Sublime Text\diseño web\programacion-com\css\media\imagenes\icono-inicio.png">
+
+               	<img class="img-aside-raight" src="D:\Sublime Text\diseño web\programacion-com\css\media\imagenes\icono-css.png">
+
+               	<img class="img-aside-raight" src="D:\Sublime Text\diseño web\programacion-com\css\media\imagenes\icono-js.png">
+
+               	<img class="img-aside-raight" src="D:\Sublime Text\diseño web\programacion-com\css\media\imagenes\icono-php.png">
+               </aside>
+     	</div>--->
+     
+     	<div class="container-footer">
+     		<footer>
+     			<h5>Deep Doom <br> (Jeremias Franco) </h5>
+     		</footer>
+     	</div>
+     	
+     </div>
+
+
+</body>
+</html>

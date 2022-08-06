@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style type="text/css">
+		
+body{
+	padding: 0;
+	margin: 0;
+	
+	
+}
+.container{
+	display: grid;
+	border: 1px solid black;
+    background-color: grey;
+    grid-template-columns:  100px auto 100px;
+    grid-template-rows:  auto 280px auto;
+
+}
+.content1{
+	border: 1px solid black;
+	background-color: whitesmoke;
+	padding: 10px;
+	text-align: center;
+	grid-column: 1 / 4;
+
+}
+.content2{
+	border: 1px solid black;
+	background-color: whitesmoke;
+	padding: 10px;
+	text-align: center;
+	font-size: 30px;
+	color: red;
+	grid-column: 1;
+	grid-row: 2 / 5;
+
+}
+.content3{
+	border: 1px solid black;
+	background-color: whitesmoke;
+	padding: 10px;
+	text-align: center;
+	grid-column: 2 / 3;
+	grid-row: 2 / 5;
+}
+.content4{
+	border: 1px solid black;
+	background-color: whitesmoke;
+	padding: 10px;
+	text-align: center;
+	font-size: 30px;
+	color: red;
+	grid-column: 3;
+	grid-row: 2 / 5;
+	
+}
+.content5{
+	border: 1px solid black;
+	background-color: whitesmoke;
+	padding: 10px;
+	text-align: center;
+	grid-column: 1 / 4;
+	grid-row: 6;
+	
+}
+	</style>
+	<title></title>
+</head>
+<body>
+<div class="container">
+	<header class="content1">
+		<b>Header</b>
+	</header>
+
+  <aside class="content2">
+    	<p>Aside</p>
+  </aside>
+
+	  <section class="content3">
+		<p>Contenido</p>
+	  </section>
+
+	  <aside class="content4">
+    	<p>Aside</p>
+  </aside>
+
+	<footer class="content5"><p>Footer</p></footer>
+
+ </div>
+</body>
+</html>

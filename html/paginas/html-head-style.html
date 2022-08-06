@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="D:\Sublime Text\diseño web\programacion-com\html\estilos\html-estilo-basico.css">
+	<title>HTML-Style</title>
+</head>
+<body> 
+     <div class="container" >
+     	<div class="header">
+          <header>
+
+               <img class="img-header" src="D:\Sublime Text\diseño web\programacion-com\css\media\imagenes\icono-css.png">
+
+               <img class="img-header" src="D:\Sublime Text\diseño web\programacion-com\css\media\imagenes\icono-js.png">
+
+               <img class="img-header" src="D:\Sublime Text\diseño web\programacion-com\css\media\imagenes\icono-php.png">
+          </header>
+     	</div>
+
+     	<div class="aside-container">
+
+     	     <aside class="aside-left">
+                    <img class="img-header2" src="D:\Sublime Text\diseño web\programacion-com\css\media\imagenes\icono-html.png" usemap="#html">
+                 <map name="html">
+                 <area shape="rect" coords="50,50,150,150" href="D:\Sublime Text\diseño web\programacion-com\html\paginas\inicio-html.html">
+     	     <nav>
+                     <div class="Formularios-nav">
+          			<form class="form-header" action="search.php">
+                     <input class="input-text" type="text">
+                     <input class="input-buscar" type="submit" value="Buscar">
+                         </form>
+                    </div>
+               </nav>
+     		    <div class="accesos-rapidos">
+     		    	 <a class="a-aside-left" href="D:\Sublime Text\diseño web\programacion-com\inicio web.html">Inicio</a>
+                     <a class="a-aside-left" href="D:\Sublime Text\diseño web\programacion-com\html\paginas\inicio-html.html">Atras</a>
+                     <a class="a-aside-left" href="#title-nav">Que es Style</a>
+                     <a class="a-aside-left" href="#ejemplo-nav">Ejemplo</a>
+                 </div>
+     	     </aside>
+
+          </div>
+
+     	<div class="container-article">
+     		<article>
+     		    <section class="info" id="inicio-nav">
+     		    	                                                
+
+     			<h2 class="h2-head">Elemento HTML <br> (<span><</span>style<span>></span>)</h2> 
+
+     			<h3 class="h3-head" id="title-nav">Que es <span><</span>style<span>></span></h3>
+
+                    <p>El elemento <span><</span><b class="color-rojo">style</b><span>></span> de HTML es encargado de inficar la información de estilo.</p>
+
+                    <h3 class="h3-head">Uso:</h3>
+
+                    <p>El elemento <span><</span><b class="color-rojo">style</b><span>></span> debe ser contenido por el Elemento <span><</span>head<span>></span>.</p>
+
+                    <h3 class="h3-head">atributos:</h3>
+                    
+                <div class="tabla">
+                      <table>
+                           <tr>
+                                <td>Atributo</td> <td>Descripción</td> <td>Valor</td>
+                           </tr>
+
+                           <tr>
+                                <td>title</td> 
+                                <td>Texto informativo o titulo del elemento, suele mostrarse a modo de "tool tip".</td> 
+                                <td>Texto legible por personas. Sensible a M/m. Por defecto: Lo fija el navegador. </td>
+                           </tr>
+
+                           <tr>
+                                <td>lang</td> 
+                                <td>Información sobre el idioma del contenido del elemento y del valor de sus atributos.</td> 
+                                <td>Un codigo de idioma. Por defectos: "desconocido"- Lo fija el navegador.</td>
+                           </tr>
+
+                           <tr>
+                                <td>dir</td> 
+                                <td>Indica la dirección de texto y tablas.</td> 
+                                <td>Uno de los siguientes: "ltr" o "rtl". Por defecto: En castellano "ltr". Lo fija el navegador.</td>
+                           </tr>
+
+                           <tr>
+                                <td>type</td> 
+                                <td>Indica el lenguaje de hojas de estilo usado.</td>
+                                 <td>Un tipo <a>MIME</a>. Para CSS es:"text/css".</td>
+                           </tr>
+                           <tr>
+                                <td>media</td> 
+                                <td>Indica el/los medios a los que estpa destinada la información de estilo.</td> <td>Uno o más descriptores de medio separados por coma. Por defecto: "screen". Lo fija el navegador.</td>
+                           </tr>
+                      </table>
+               </div>
+
+                    <div class="box-ejemplos">
+                         <h3 class="h3-head" id="ejemplo-nav">Ejemplos:</h3>
+                         <div class="box-ejemplo-codigo">
+                                                         <h5>Código</h5>
+                            
+                    <ol> Style Inline
+                        <li>
+                                <span><</span><b>html</b><span>></span> <br>
+                                <span><</span><b>head</b><span>></span> <br>
+
+                                <ol>
+                                     <span><</span><b>meta</b> charset="utf-8"<span>></span> <br>
+                                     <span><</span><b>meta</b> name="viewport" content="width=device-width, initial-scale=1"<span>></span> <br>
+                                     <span><</span><b>title</b><span>></span> <span><</span>/<b>title</b><span>></span><br>
+                                </ol>
+
+                                <span><</span>/<b>head</b><span>></span> <br>
+                                <span><</span><b>body</b><span>></span> <br>
+                                 
+                                 <ol>
+                                    <span><</span><b>p</b><span> <b class="color-verde">style</b>= <b class="color-amarillo">"</b><b class="color-celeste">color</b>: <b class="color-celeste">red</b>;<b class="color-amarillo">"</b>></span>Ejemplo de estilos<span><</span>/<b>p</b><span>></span><br>  
+                                 </ol>
+
+                                <span><</span>/<b>body</b><span>></span> <br>
+                                <span><</span><b>html</b><span>></span>
+                         </li>
+                    </ol>
+
+                    <ol> Style Internal
+                        <li>
+                                <span><</span><b>html</b><span>></span> <br>
+                                <span><</span><b>head</b><span>></span> <br>
+
+                                <ol>
+                                     <span><</span><b>meta</b> charset="utf-8"<span>></span> <br>
+                                     <span><</span><b>meta</b> name="viewport" content="width=device-width, initial-scale=1"<span>></span> <br>
+                                     <span><</span><b>title</b><span>></span> <span><</span>/<b>title</b><span>></span><br>
+                                     <span><</span><b class="color-rojo">style</b><span>></span><br>
+                                     <ol>
+                                          <b class="color-rojo">p</b>{<br>
+                                          <ol>
+                                               <b class="color-celeste">color</b>: <b class="color-celeste">red</b>;<br>
+                                          </ol>
+                                         }
+                                     </ol>
+                                     <span><</span>/<b class="color-rojo">style</b><span>></span><br>
+                                </ol>
+
+                                <span><</span>/<b>head</b><span>></span> <br>
+                                <span><</span><b>body</b><span>></span> <br>
+                                 
+                                 <ol>
+                                      <span><</span><b>p</b><span>></span>Ejemplo de estilos<span><</span>/<b>p</b><span>></span><br>
+                                 </ol>
+
+                                <span><</span>/<b>body</b><span>></span> <br>
+                                <span><</span><b>html</b><span>></span>
+                         </li>
+                    </ol>
+
+                    <ol> Style External
+                        <li>
+                                <span><</span><b>html</b><span>></span> <br>
+                                <span><</span><b>head</b><span>></span> <br>
+
+                                <ol>
+                                     <span><</span><b>meta</b> charset="utf-8"<span>></span> <br>
+                                     <span><</span><b>meta</b> name="viewport" content="width=device-width, initial-scale=1"<span>></span> <br>
+                                     <span><</span><b class="color-rojo">link</b> <b class="color-verde">rel</b>=<b class="color-amarillo">"stylesheet"</b> <b class="color-verde">type</b>=<b class="color-amarillo">"text/css"</b> <b class="color-verde">href</b>=<b class="color-amarillo">"ejemplo/hoja-de-estilo-css.css"</b><span>></span><br>
+                                     <span><</span><b>title</b><span>></span> <span><</span>/<b>title</b><span>></span><br>
+                                </ol>
+                                <span><</span>/<b>head</b><span>></span> <br>
+                                <span><</span><b>body</b><span>></span> <br>
+                                <ol>
+                                     <span><</span><b>p</b><span>></span>Ejemplo de estilos<span><</span>/<b>p</b><span>></span><br>
+                                </ol>
+                                <span><</span>/<b>body</b><span>></span> <br>
+                                <span><</span><b>html</b><span>></span>
+                         </li>
+                    </ol>
+
+                    <ol> "hoja-de-estilo-css.css"
+                        <li>
+                                <ol>
+                                          <b class="color-rojo">p</b>{<br>
+                                          <ol>
+                                               <b class="color-celeste">color</b>: <b class="color-celeste">red</b>;<br>
+                                          </ol>
+                                         }
+                                     </ol>
+                         </li>
+                    </ol>
+                         </div>
+                         <div class="box-ejemplo-visual">
+                                                         <h5>Como se veria:</h5>
+                                   <iframe class="ejemplo-de-web" src="D:\Sublime Text\diseño web\programacion-com\html\media\objetos\ejemplo-style.html">ejemplo</iframe>
+                         </div>
+                    </div>
+                   </section>
+              </article>
+     	</div>
+
+     	<!---<div class="aside-raight">
+               <aside>
+               	<h3>Otros lenguajes de programacion</h3>
+
+               	<img class="img-aside-raight" src="D:\Sublime Text\diseño web\programacion-com\css\media\imagenes\icono-inicio.png">
+
+               	<img class="img-aside-raight" src="D:\Sublime Text\diseño web\programacion-com\css\media\imagenes\icono-css.png">
+
+               	<img class="img-aside-raight" src="D:\Sublime Text\diseño web\programacion-com\css\media\imagenes\icono-js.png">
+
+               	<img class="img-aside-raight" src="D:\Sublime Text\diseño web\programacion-com\css\media\imagenes\icono-php.png">
+               </aside>
+     	</div>--->
+     
+     	<div class="container-footer">
+     		<footer>
+     			<h5>Deep Doom <br> (Jeremias Franco) </h5>
+     		</footer>
+     	</div>
+     	
+     </div>
+
+
+</body>
+</html>

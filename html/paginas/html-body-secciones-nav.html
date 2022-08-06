@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="D:\Sublime Text\diseño web\programacion-com\html\estilos\html-estilo-basico.css">
+	<title>HTML-secciones-nav</title>
+</head>
+<body> 
+     <div class="container" >
+     	<div class="header">
+          <header>
+
+               <img class="img-header" src="D:\Sublime Text\diseño web\programacion-com\css\media\imagenes\icono-css.png">
+
+               <img class="img-header" src="D:\Sublime Text\diseño web\programacion-com\css\media\imagenes\icono-js.png">
+
+               <img class="img-header" src="D:\Sublime Text\diseño web\programacion-com\css\media\imagenes\icono-php.png">
+          </header>
+     	</div>
+
+     	<div class="aside-container">
+
+     	     <aside class="aside-left">
+                    <img class="img-header2" src="D:\Sublime Text\diseño web\programacion-com\css\media\imagenes\icono-html.png" usemap="#html">
+                 <map name="html">
+                 <area shape="rect" coords="50,50,150,150" href="D:\Sublime Text\diseño web\programacion-com\html\paginas\inicio-html.html">
+     	     <nav>
+                     <div class="Formularios-nav">
+          			<form class="form-header" action="search.php">
+                     <input class="input-text" type="text">
+                     <input class="input-buscar" type="submit" value="Buscar">
+                         </form>
+                    </div>
+               </nav>
+     		    <div class="accesos-rapidos">
+     		    	 <a class="a-aside-left" href="D:\Sublime Text\diseño web\programacion-com\inicio web.html">Inicio</a>
+                     <a class="a-aside-left" href="D:\Sublime Text\diseño web\programacion-com\html\paginas\inicio-html.html">Atras</a>
+                     <a class="a-aside-left" href="#title-nav">Que es nav</a>
+                     <a class="a-aside-left" href="#ejemplo-nav">Ejemplo</a>
+                 </div>
+     	     </aside>
+
+          </div>
+
+     	<div class="container-article">
+     		<article>
+     		    <section class="info" id="inicio-nav">
+     		    	                                                
+
+     			<h2 class="h2-head">Elemento HTML <br> (<span><</span>nav<span>></span>)</h2> 
+
+     			<h3 class="h3-head" id="title-nav">Que es <span><</span>nav<span>></span></h3>
+
+                    <p>El elemento HTML <span><</span><b class="color-rojo">nav</b><span>></span> representa una sección de una página cuyo propósito es proporcionar enlaces de navegación, ya sea dentro del documento actual o a otros documentos. Ejemplos comunes de secciones de navegación son menús, tablas de contenido e indices.</p>
+
+                    <h3 class="h3-head">Uso:</h3>
+
+                    <p> No es necesario que todos los enlaces estén contenidos en un elemento <span><</span><b class="color-rojo">nav</b><span>></span>. <span><</span><b class="color-rojo">nav</b><span>></span> es´ta destinado sólo para el bloque principal de enlaces de navegación; por lo general, el elemento <span><</span>footer<span>></span> a menudo contiene una lista de enlaces que no necesitan estar en un elemento <span><</span><b class="color-rojo">nav</b><span>></span>.</p>
+
+                    <p> Un documento puede tener varios elementos <span><</span><b class="color-rojo">nav</b><span>></span>, Por ejemeplo, uno para la navegación del sitio y otra para la navegación dentro de la página. <b>aria-labelledby</b> puede ser utilizado en tal caso para promover la accesibilidad.</p>
+                    <p> Los agentes de usuario, como los lectores de pantalla dirigidos a usuarios con discapacidades, pueden usar este elemento para determinar si se omite la representación inicial del contenido de solo navegación.</p>
+
+                    <h3 class="h3-head">atributos:</h3>
+                      
+                      <p>Este elemento sólo inlcuye atributos globales.</p>
+
+                      <a href="">Atributos Globales</a>
+
+                    <div class="box-ejemplos">
+                         <h3 class="h3-head" id="ejemplo-nav">Ejemplos:</h3>
+                         <div class="box-ejemplo-codigo">
+                                                         <h5>Código</h5>
+
+                    <ol>
+                        <li>
+                                <span><</span><b>html</b><span>></span> <br>
+                                <span><</span><b>head</b><span>></span> <br>
+
+                                <ol>
+                                     <span><</span><b>meta</b> charset="utf-8"<span>></span> <br>
+                                     <span><</span><b>meta</b> name="viewport" content="width=device-width, initial-scale=1"<span>></span> <br>
+                                     <span><</span><b>title</b><span>></span> <span><</span>/<b>title</b><span>></span><br>
+                                </ol>
+
+                                <span><</span>/<b>head</b><span>></span> <br>
+                                <span><</span><b>body</b><span>></span> <br>
+                                    
+                                 <ol>
+                                    <span><</span><b class="color-rojo">nav</b><span>></span><br>
+                                    <span><</span><b>a</b> <b class="color-verde">href</b>=<b class="color-amarillo">"#Inicio"</b><span>></span> Inicio <span><</span>/<b>a</b><span>></span><br>
+                                    <span><</span><b>a</b> <b class="color-verde">href</b>=<b class="color-amarillo">"#Contenido"</b><span>></span> Contenido <span><</span>/<b>a</b><span>></span><br>
+                                    <span><</span><b>a</b> <b class="color-verde">href</b>=<b class="color-amarillo">"#Final"</b><span>></span> Final <span><</span>/<b>a</b><span>></span><br>
+                                     <span><</span>/<b class="color-rojo">nav</b><span>></span><br>
+                                     <ol> 
+                                        <span><</span>/<b>div</b> class="contenedor"<span>></span> <br>
+                                          <span><</span><b>h1</b> <b class="color-verde">id</b>= <b class="color-amarillo">"Inicio"</b><span>></span> Inicio <span><</span>/<b>h1</b><span>></span><br>
+                                          <span><</span><b>p</b><span>></span><br> Inicio,Inicio,Inicio,Inicio,Inicio,Inicio,Inicio,Inicio,Inicio,Inicio,<br>Inicio,Inicio,Inicio,Inicio,Inicio,Inicio,Inicio,Inicio,Inicio,Inicio,<br>Inicio,Inicio,Inicio,Inicio,Inicio,Inicio,Inicio,Inicio,Inicio,Inicio,<br>Inicio,Inicio,Inicio,Inicio,Inicio,Inicio,Inicio,Inicio,Inicio,Inicio,<br>
+                                          Inicio,Inicio,Inicio,Inicio,Inicio,Inicio,Inicio,Inicio,Inicio,Inicio,<br>
+                                          <span><</span>/<b>p</b><span>></span><br>
+
+                                          <span><</span><b>h2</b> <b class="color-verde">id</b>= <b class="color-amarillo">"Contenido"</b><span>></span> Contenido <span><</span>/<b>h2</b><span>></span><br>
+                                          <span><</span><b>p</b><span>></span><br>  
+                                          Contenido,Contenido,Contenido,Contenido,Contenido,Contenido,Contenido,Contenido,Contenido,Contenido,<br>
+                                          Contenido,Contenido,Contenido,Contenido,Contenido,Contenido,Contenido,Contenido,Contenido,Contenido,<br>
+                                          Contenido,Contenido,Contenido,Contenido,Contenido,Contenido,Contenido,Contenido,Contenido,Contenido,<br>
+                                          Contenido,Contenido,Contenido,Contenido,Contenido,Contenido,Contenido,Contenido,Contenido,Contenido,<br>  <span><</span>/<b>p</b><span>></span><br>
+
+                                          <span><</span><b>h3</b> <b class="color-verde">id</b>= <b class="color-amarillo">"Final"</b><span>></span> Final <span><</span>/<b>h3</b><span>></span><br>
+                                          <span><</span><b>p</b><span>></span><br> 
+                                          Final,Final,Final,Final,Final,Final,Final,Final,Final,Final,<br>
+                                          Final,Final,Final,Final,Final,Final,Final,Final,Final,Final,<br>
+                                          Final,Final,Final,Final,Final,Final,Final,Final,Final,Final,<br>
+                                          Final,Final,Final,Final,Final,Final,Final,Final,Final,Final,<br>
+                                          <span><</span>/<b>p</b><span>></span><br>
+                                         <span><</span>/<b>div</b><span>></span> <br>
+                                     </ol> 
+                                 </ol>
+
+                                <span><</span>/<b>body</b><span>></span> <br>
+                                <span><</span><b>html</b><span>></span>
+                         </li>
+                    </ol>
+                    <details><summary>Estilo CSS</summary>
+                    <ol> 
+                        <li>
+                              <b class="color-rojo">body</b>{<br>
+                              <ul>
+                                   <b class="color-celeste">display</b>: <b class="color-celeste">grid</b>;<br>
+                                   <b class="color-celeste">grid-template-rows</b>: <b class="color-celeste">auto auto</b>;<br>
+                                   <b class="color-celeste">background-color</b>: <b class="color-celeste">white</b>;<br>
+                                   <b class="color-celeste">font-size</b>: <b class="color-violeta">20</b><b class="color-celeste">px</b>;<br>
+                                   <b class="color-celeste">text-aline</b>: <b class="color-celeste">center</b>;<br>
+                                   }
+                              </ul>
+                              <b class="color-rojo">a</b>{<br>
+                              <ul>
+                                   <b class="color-celeste">padding</b>: <b class="color-violeta">10</b><b class="color-celeste">px</b>;<br>
+                                   }
+                              </ul>
+
+                              <b class="color-verde">.contenedor</b>{<br>
+                              <ul>
+                                   <b class="color-celeste">grid-row</b>: <b class="color-violeta">2</b>;<br>
+                                   }
+                              </ul>
+
+                              <b class="color-rojo">nav</b>{<br>
+                              <ul>
+                                   <b class="color-celeste">background-color</b>: <b class="color-celeste">white</b>;<br>
+                                   <b class="color-celeste">position</b>: <b class="color-celeste">sticky</b>;<br>
+                                   <b class="color-celeste">top</b>: <b class="color-violeta">0</b>;<br>
+                                   <b class="color-celeste">border</b>: <b class="color-celeste">solid</b> <b class="color-violeta">1</b><b class="color-celeste">px black</b>;<br>
+                                   <b class="color-celeste">grid-row</b>: <b class="color-violeta">1</b>;<br>
+                                   }
+                              </ul>
+                        </li>
+                    </ol>
+                    </details>
+                         </div>
+                         <div class="box-ejemplo-visual">
+                                                         <h5>Como se veria:</h5>
+                                   <iframe class="ejemplo-de-web" src="D:\Sublime Text\diseño web\programacion-com\html\media\objetos\ejemplo-nav.html">ejemplo</iframe>
+                         </div>
+                    </div>
+                   </section>
+              </article>
+     	</div>
+
+     	<!---<div class="aside-raight">
+               <aside>
+               	<h3>Otros lenguajes de programacion</h3>
+
+               	<img class="img-aside-raight" src="D:\Sublime Text\diseño web\programacion-com\css\media\imagenes\icono-inicio.png">
+
+               	<img class="img-aside-raight" src="D:\Sublime Text\diseño web\programacion-com\css\media\imagenes\icono-css.png">
+
+               	<img class="img-aside-raight" src="D:\Sublime Text\diseño web\programacion-com\css\media\imagenes\icono-js.png">
+
+               	<img class="img-aside-raight" src="D:\Sublime Text\diseño web\programacion-com\css\media\imagenes\icono-php.png">
+               </aside>
+     	</div>--->
+     
+     	<div class="container-footer">
+     		<footer>
+     			<h5>Deep Doom <br> (Jeremias Franco) </h5>
+     		</footer>
+     	</div>
+     	
+     </div>
+
+
+</body>
+</html>

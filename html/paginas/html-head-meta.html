@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="D:\Sublime Text\diseño web\programacion-com\html\estilos\html-estilo-basico.css">
+	<title>HTML-Meta</title>
+</head>
+<body> 
+     <div class="container" >
+     	<div class="header">
+          <header>
+
+               <img class="img-header" src="D:\Sublime Text\diseño web\programacion-com\css\media\imagenes\icono-css.png">
+
+               <img class="img-header" src="D:\Sublime Text\diseño web\programacion-com\css\media\imagenes\icono-js.png">
+
+               <img class="img-header" src="D:\Sublime Text\diseño web\programacion-com\css\media\imagenes\icono-php.png">
+          </header>
+     	</div>
+
+     	<div class="aside-container">
+
+     	     <aside class="aside-left">
+                    <img class="img-header2" src="D:\Sublime Text\diseño web\programacion-com\css\media\imagenes\icono-html.png" usemap="#html">
+                 <map name="html">
+                 <area shape="rect" coords="50,50,150,150" href="D:\Sublime Text\diseño web\programacion-com\html\paginas\inicio-html.html">
+     	     <nav>
+                     <div class="Formularios-nav">
+          			<form class="form-header" action="search.php">
+                     <input class="input-text" type="text">
+                     <input class="input-buscar" type="submit" value="Buscar">
+                         </form>
+                    </div>
+               </nav>
+     		    <div class="accesos-rapidos">
+     		    	 <a class="a-aside-left" href="D:\Sublime Text\diseño web\programacion-com\inicio web.html">Inicio</a>
+                     <a class="a-aside-left" href="D:\Sublime Text\diseño web\programacion-com\html\paginas\inicio-html.html">Atras</a>
+                     <a class="a-aside-left" href="#title-nav">Que es meta</a>
+                     <a class="a-aside-left" href="#ejemplo-nav">Ejemplo</a>
+                 </div>
+     	     </aside>
+
+          </div>
+
+     	<div class="container-article">
+     		<article>
+     		    <section class="info" id="inicio-nav">
+     		    	                                                
+
+     			<h2 class="h2-head">Elemento HTML <br> (<span><</span>meta<span>></span>)</h2> 
+
+     			<h3 class="h3-head" id="title-nav">Que es <span><</span>meta<span>></span></h3>
+
+                    <p>El elemento <span><</span><b class="color-rojo">meta</b><span>></span> de "metainformación". Sirve para aportar información sobre el documento.</p>
+
+                    <p>Es un elemento de cabecera.</p>
+
+                    <h3 class="h3-head">Uso:</h3>
+
+                    <p>Con name y content:</p>
+                    <p><span><</span><span><b class="color-rojo">meta</b></span> name="copyright" content="@ 2022 Jeremias"<span>></span></p>
+
+                    <p>Con http-equiv:</p>
+                    <p><span><</span><span><b class="color-rojo">meta</b></span> http-equiv="Content-type" content="text/html;charset=UTF-8"<span>></span></p>
+
+                    <h3 class="h3-head">atributos:</h3>
+                      
+                      <p>Los atributos debe indicarlo el autor.</p>
+                    <div class="tabla">
+                      <table>
+                           <tr>
+                                <td>Atributo</td> <td>Descripción</td> <td>Valor</td>
+                           </tr>
+
+                           <tr>
+                                <td>lang</td> 
+                                <td>Información sobre el idioma del contenido del elemento y del valor de sus atributos.</td> 
+                                <td>Un código de idioma. Por defecto : "desconocido". Lo fija el navegador.</td>
+                           </tr>
+
+                           <tr>
+                                <td>dir</td> 
+                                <td>Indica la dirección de texto y tablas</td> 
+                                <td>Uno de los siguientes: "ltr" o "rtl". Por defecto: En castellano "ltr". Lo fija el navegador.</td>
+                           </tr>
+
+                           <tr>
+                                <td>name</td> 
+                                <td>Nombre al que se asocia la metainformación.</td> 
+                                <td>Un "nombre". Sensible a M/m. Por defecto:Lo fija el navegador.</td>
+                           </tr>
+
+                           <tr>
+                                <td>content</td> 
+                                <td>Los datos que se quieren asociar a <b>name</b>.</td> 
+                                <td>Texto. Sensible a M/m.</td>
+                           </tr>
+
+                           <tr>
+                                <td>http-equiv</td> 
+                                <td>Aporta información sobre los encabezado de repuesta HTTP, puede usarse en lugar de <b>name</b>.</td> 
+                                <td>Un "nombre". Por defecto: Lo fija el navegador.</td>
+                           </tr>
+
+                           <tr>
+                                <td>scheme</td> 
+                                <td>Indica un esquema de interpretación para los metadatos.</td> 
+                                <td>Texto. Sensible a M/m. Por defecto: Lo fija el navegador.</td>
+                           </tr>
+                      </table>
+                      </div>
+
+                    <div class="box-ejemplos">
+                         <h3 class="h3-head" id="ejemplo-nav">Ejemplos:</h3>
+                         <div class="box-ejemplo-codigo">
+                                                         <h5>Código</h5>
+
+                    <ol>
+                        <li>
+                                <span><</span><b>html</b><span>></span> <br>
+                                <span><</span><b>head</b><span>></span> <br>
+
+                                <ol>Para permitir simbolos en nuestros documentos:<br>
+                                     <span><</span><b class="color-rojo">meta</b> <b class="color-verde">charset</b>=<b class="color-amarillo">"utf-8"</b><span>></span> <br>
+                                      <br>
+                                     Para permitir distintos tamaños de dispositivos:<br>
+                                     <span><</span><b class="color-rojo">meta</b> <b class="color-verde">name</b>=<b class="color-amarillo">"viewport" content="width=device-width, initial-scale=1"</b><span>></span> <br>
+                                      <br>
+                                     Para poner una descripcion de la web:<br>
+                                     <span><</span><b class="color-rojo">meta</b> <b class="color-verde">name</b>=<b class="color-amarillo">"description"</b> <b class="color-verde">content</b>=<b class="color-amarillo">"esta web es para aprender sobre la etiqueta meta"</b><span>></span> <br>
+                                      <br>
+                                     Para poner parabras claves de la web:<br>
+                                     <span><</span><b class="color-rojo">meta</b> <b class="color-verde">name</b>=<b class="color-amarillo">"keywords"</b> <b class="color-verde">content</b>=<b class="color-amarillo">"html, etiquetas, aprender, programar"</b><span>></span> <br>
+                                      <br>
+                                     Para decidir la velocidad de refrezco de la web en segundos:<br>
+                                     <span><</span><b class="color-rojo">meta</b> <b class="color-verde">https-equiv</b>=<b class="color-amarillo">"refrash"</b> <b class="color-verde">content</b>=<b class="color-amarillo">"3"</b><span>></span> <br>
+                                      <br>
+                                     Para elegir el comportamiento de los motores de busqueda:<br>
+                                     <span><</span><b class="color-rojo">meta</b> <b class="color-verde">name</b>=<b class="color-amarillo">"robots"</b> <b class="color-verde">content</b>=<b class="color-amarillo">"index"</b><span>></span> <br>
+                                     <span><</span><b>title</b><span>></span> <span><</span>/<b>title</b><span>></span><br>
+                                </ol>
+
+                                <span><</span>/<b>head</b><span>></span> <br>
+                                <span><</span><b>body</b><span>></span> <br>
+                                 
+                                 <ol>
+                                      
+                                 </ol>
+
+                                <span><</span>/<b>body</b><span>></span> <br>
+                                <span><</span><b>html</b><span>></span>
+                         </li>
+                    </ol>
+                         </div>
+                    </div>
+                   </section>
+              </article>
+     	</div>
+
+     	<!---<div class="aside-raight">
+               <aside>
+               	<h3>Otros lenguajes de programacion</h3>
+
+               	<img class="img-aside-raight" src="D:\Sublime Text\diseño web\programacion-com\css\media\imagenes\icono-inicio.png">
+
+               	<img class="img-aside-raight" src="D:\Sublime Text\diseño web\programacion-com\css\media\imagenes\icono-css.png">
+
+               	<img class="img-aside-raight" src="D:\Sublime Text\diseño web\programacion-com\css\media\imagenes\icono-js.png">
+
+               	<img class="img-aside-raight" src="D:\Sublime Text\diseño web\programacion-com\css\media\imagenes\icono-php.png">
+               </aside>
+     	</div>--->
+     
+     	<div class="container-footer">
+     		<footer>
+     			<h5>Deep Doom <br> (Jeremias Franco) </h5>
+     		</footer>
+     	</div>
+     	
+     </div>
+
+
+</body>
+</html>

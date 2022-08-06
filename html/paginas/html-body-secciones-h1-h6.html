@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="D:\Sublime Text\diseño web\programacion-com\html\estilos\html-estilo-basico.css">
+	<title>HTML-secciones-h1-h6</title>
+</head>
+<body> 
+     <div class="container" >
+     	<div class="header">
+          <header>
+
+               <img class="img-header" src="D:\Sublime Text\diseño web\programacion-com\css\media\imagenes\icono-css.png">
+
+               <img class="img-header" src="D:\Sublime Text\diseño web\programacion-com\css\media\imagenes\icono-js.png">
+
+               <img class="img-header" src="D:\Sublime Text\diseño web\programacion-com\css\media\imagenes\icono-php.png">
+          </header>
+     	</div>
+
+     	<div class="aside-container">
+
+     	     <aside class="aside-left">
+                    <img class="img-header2" src="D:\Sublime Text\diseño web\programacion-com\css\media\imagenes\icono-html.png" usemap="#html">
+                 <map name="html">
+                 <area shape="rect" coords="50,50,150,150" href="D:\Sublime Text\diseño web\programacion-com\html\paginas\inicio-html.html">
+     	     <nav>
+                     <div class="Formularios-nav">
+          			<form class="form-header" action="search.php">
+                     <input class="input-text" type="text">
+                     <input class="input-buscar" type="submit" value="Buscar">
+                         </form>
+                    </div>
+               </nav>
+     		    <div class="accesos-rapidos">
+     		    	 <a class="a-aside-left" href="D:\Sublime Text\diseño web\programacion-com\inicio web.html">Inicio</a>
+                     <a class="a-aside-left" href="D:\Sublime Text\diseño web\programacion-com\html\paginas\inicio-html.html">Atras</a>
+                     <a class="a-aside-left" href="#title-nav">Que es h1,h2, h3, h4, h5, h6</a>
+                     <a class="a-aside-left" href="#ejemplo-nav">Ejemplo</a>
+                 </div>
+     	     </aside>
+
+          </div>
+
+     	<div class="container-article">
+     		<article>
+     		    <section class="info" id="inicio-nav">
+     		    	                                                
+
+     			<h2 class="h2-head">Elemento HTML <br> (<span><</span>h1<span>></span> - <span><</span>h6<span>></span>)</h2> 
+
+     			<h3 class="h3-head" id="title-nav">Que es <span><</span>h1<span>></span> - <span><</span>h6<span>></span></h3>
+
+                    <p>El elemento HTML <span><</span><b class="color-rojo">h1</b><span>></span> - <span><</span><b class="color-rojo">h6</b><span>></span> son elementos de <b>encabezado</b> que implementan seis niveles de encabezado del documento, <span><</span><b class="color-rojo">h1</b><span>></span> es el más importante, y <span><</span><b class="color-rojo">h6</b><span>></span> el menos importante. Un elemento de encabezado describe brevemente el tema de la sección que representa. La información de encabezado puede ser usada por los agentes usuario, por ejemeplo, para construir una tabla de contenidos para un documento automáticamente.</p>
+
+                    <h3 class="h3-head">Uso:</h3>
+
+                    <p> No se debe usar niveles inferiores para reducir el tamaño de la fuente; use la propiedad <b class="color-celeste">CSS</b> <b>font-size</b> para eso.</p>
+
+                    <p> Evite omitir niveles de encabezado; simpre comience con <span><</span><b class="color-rojo">h1</b><span>></span>, después use <span><</span><b class="color-rojo">h2</b><span>></span> y asi sucesivamente.</p>
+
+                    <p> Con el elemento <span><</span>section<span>></span>, debe considerar evitar usar <span><</span><b class="color-rojo">h1</b><span>></span>, más de una vez en una página; por costumbre, se usa para mostrar el titulo de la página, con todos los emcabezados debajo de éste comenzando con <span><</span><b class="color-rojo">h2</b><span>></span>. Cuando se usan secciones, debe usarse un <span><</span><b class="color-rojo">h1</b><span>></span> por sección.</p>
+
+                <h3 class="h3-head">Accesibilidad:</h3>
+
+                     <h4 class="h4-accesibilidad">Navegación</h4>
+
+                     <p>Una forma tipica de nevegación que utilizan las personas no vientes es moverse a través de la pantalla con las etiquetas de encabezado. De esta forma, pueden conocer rápidamente el contenido de la página en poco tiempo; por esta razón es importante prestar mucha atención a nuestras etiquetas de encabezado y no saltarse ningún nivel o podriamos confundir a este usuario.</p>
+
+                     <h4>No hacer</h4>
+
+                    <p>
+                        <span><</span><b class="color-rojo">h1</b><span>></span>
+                        Cabecera nivel 1 
+                        <span><</span>/<b class="color-rojo">h1</b><span>></span>
+                        <br>
+                        <span><</span><b class="color-rojo">h3</b><span>></span>
+                        Cabecera nivel 3
+                        <span><</span>/<b class="color-rojo">h3</b><span>></span>
+                        <br>
+                        <span><</span><b class="color-rojo">h4</b><span>></span>
+                        Cabecera nivel 4 
+                        <span><</span>/<b class="color-rojo">h4</b><span>></span>
+                   </p>
+
+                     <h4>Si hacer</h4>
+
+                     <p>
+                        <span><</span><b class="color-rojo">h1</b><span>></span>
+                        Cabecera nivel 1 
+                        <span><</span>/<b class="color-rojo">h1</b><span>></span>
+                        <br>
+                        <span><</span><b class="color-rojo">h2</b><span>></span>
+                        Cabecera nivel 2
+                        <span><</span>/<b class="color-rojo">h2</b><span>></span>
+                        <br>
+                        <span><</span><b class="color-rojo">h3</b><span>></span>
+                        Cabecera nivel 3 
+                        <span><</span>/<b class="color-rojo">h3</b><span>></span>
+                   </p>
+
+                     <h4 class="h4-accesibilidad">Anidar</h4>
+
+                     <p>Las etiquetas de cabecera pueden anidarse para generar sub-secciones en nuestros documentos. Esto beneficia la organización de la información y también ayuda a los usuarios de lectores de pantalla a conocer mejor la jerarquia de los contenidos.</p>
+                      
+                      <ol>
+                           <li>
+                                <b>h1</b>
+                                "Harry Potter"
+                                <ol>
+                                    <li>
+                                        <b>h2</b>
+                                        "Sinopsis"
+                                        <li>
+                                             <b>h2</b>
+                                             "Novelas"
+                                             <ol>
+                                                <li>
+                                                     <b>h3</b>
+                                                     "Harry Potter y la Piedra Filosofal"
+                                                </li> 
+                                                <li>
+                                                     <b>h3</b>
+                                                     "Harry Potter y la Cámara de los Secretos"
+                                                </li> 
+                                                <li>
+                                                     <b>h3</b>
+                                                     "Harry Potter y el Prisionero de Azkaban"
+                                                </li> 
+                                                <li>
+                                                     <b>h3</b>
+                                                     "Harry Potter y el Cáliz de Fuego"
+                                                </li> 
+                                                <li>
+                                                     <b>h3</b>
+                                                     "Harry Potter y la Orden del Fenix"
+                                                </li> 
+                                                <li>
+                                                     <b>h3</b>
+                                                     "Harry Potter y el Principe Mestizo"
+                                                </li> 
+                                                <li>
+                                                     <b>h3</b>
+                                                     "Harry Potter y las Reliqueas de la Muerte"
+                                                </li> 
+                                             </ol>
+                                        </li>
+                                        <li>
+                                             <b>h2</b>
+                                             "Peliculas"
+                                             <ol>
+                                                <li>
+                                                     <b>h3</b>
+                                                     "Harry Potter y la Piedra Filosofal"
+                                                </li> 
+                                                <li>
+                                                     <b>h3</b>
+                                                     "Harry Potter y la Cámara de los Secretos"
+                                                </li> 
+                                                <li>
+                                                     <b>h3</b>
+                                                     "Harry Potter y el Prisionero de Azkaban"
+                                                </li> 
+                                                <li>
+                                                     <b>h3</b>
+                                                     "Harry Potter y el Cáliz de Fuego"
+                                                </li> 
+                                                <li>
+                                                     <b>h3</b>
+                                                     "Harry Potter y la Orden del Fenix"
+                                                </li> 
+                                                <li>
+                                                     <b>h3</b>
+                                                     "Harry Potter y el Principe Mestizo"
+                                                </li> 
+                                                <li>
+                                                     <b>h3</b>
+                                                     "Harry Potter y las Reliqueas de la Muerte (Parte 1)"
+                                                </li>
+                                                <li>
+                                                     <b>h3</b>
+                                                     "Harry Potter y las Reliqueas de la Muerte (Parte 2)"
+                                                </li> 
+                                             </ol>
+                                        </li>
+
+                                    </li> 
+                                </ol>
+                           </li>
+                      </ol>
+                     
+
+                    <h3 class="h3-head">atributos:</h3>
+                      
+                      <p>Este elemento sólo inlcuye atributos globales.</p>
+
+                      <a href="">Atributos Globales</a>
+
+                    <div class="box-ejemplos">
+                         <h3 class="h3-head" id="ejemplo-nav">Ejemplos:</h3>
+                         <div class="box-ejemplo-codigo">
+                                                         <h5>Código</h5>
+
+                    <ol>
+                        <li>
+                                <span><</span><b>html</b><span>></span> <br>
+                                <span><</span><b>head</b><span>></span> <br>
+
+                                <ol>
+                                     <span><</span><b>meta</b> charset="utf-8"<span>></span> <br>
+                                     <span><</span><b>meta</b> name="viewport" content="width=device-width, initial-scale=1"<span>></span> <br>
+                                     <span><</span><b>title</b><span>></span> <span><</span>/<b>title</b><span>></span><br>
+                                </ol>
+
+                                <span><</span>/<b>head</b><span>></span> <br>
+                                <span><</span><b>body</b><span>></span> <br>
+                                 
+                                 <ol>
+                                     <span><</span><b class="color-rojo">h1</b><span>></span>
+                                     Hola soy un h1
+                                     <span><</span>/<b class="color-rojo">h1</b><span>></span> <br>
+
+                                     <span><</span><b class="color-rojo">h2</b><span>></span>
+                                     Hola soy un h2
+                                     <span><</span>/<b class="color-rojo">h2</b><span>></span> <br>
+
+                                     <span><</span><b class="color-rojo">h3</b><span>></span>
+                                     Hola soy un h3
+                                     <span><</span>/<b class="color-rojo">h3</b><span>></span> <br>
+
+                                     <span><</span><b class="color-rojo">h4</b><span>></span>
+                                     Hola soy un h4
+                                     <span><</span>/<b class="color-rojo">h4</b><span>></span> <br>
+
+                                     <span><</span><b class="color-rojo">h5</b><span>></span>
+                                     Hola soy un h5
+                                     <span><</span>/<b class="color-rojo">h5</b><span>></span> <br>
+
+                                     <span><</span><b class="color-rojo">h6</b><span>></span>
+                                     Hola soy un h6
+                                     <span><</span>/<b class="color-rojo">h6</b><span>></span> <br> 
+                                 </ol>
+
+                                <span><</span>/<b>body</b><span>></span> <br>
+                                <span><</span><b>html</b><span>></span>
+                         </li>
+                    </ol>
+                         </div>
+                         <div class="box-ejemplo-visual">
+                                                         <h5>Como se veria:</h5>
+                                   <iframe class="ejemplo-de-web" src="D:\Sublime Text\diseño web\programacion-com\html\media\objetos\ejemplo-h1-h6.html">ejemplo</iframe>
+                         </div>
+                    </div>
+        
+                   <b></b>
+                   </section>
+              </article>
+     	</div>
+
+     	<!---<div class="aside-raight">
+               <aside>
+               	<h3>Otros lenguajes de programacion</h3>
+
+               	<img class="img-aside-raight" src="D:\Sublime Text\diseño web\programacion-com\css\media\imagenes\icono-inicio.png">
+
+               	<img class="img-aside-raight" src="D:\Sublime Text\diseño web\programacion-com\css\media\imagenes\icono-css.png">
+
+               	<img class="img-aside-raight" src="D:\Sublime Text\diseño web\programacion-com\css\media\imagenes\icono-js.png">
+
+               	<img class="img-aside-raight" src="D:\Sublime Text\diseño web\programacion-com\css\media\imagenes\icono-php.png">
+               </aside>
+     	</div>--->
+     
+     	<div class="container-footer">
+     		<footer>
+     			<h5>Deep Doom <br> (Jeremias Franco) </h5>
+     		</footer>
+     	</div>
+     	
+     </div>
+
+
+</body>
+</html>

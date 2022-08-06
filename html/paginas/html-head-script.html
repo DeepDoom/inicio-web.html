@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="D:\Sublime Text\diseño web\programacion-com\html\estilos\html-estilo-basico.css">
+	<title>HTML-Script</title>
+</head>
+<body> 
+     <div class="container" >
+     	<div class="header">
+          <header>
+
+               <img class="img-header" src="D:\Sublime Text\diseño web\programacion-com\css\media\imagenes\icono-css.png">
+
+               <img class="img-header" src="D:\Sublime Text\diseño web\programacion-com\css\media\imagenes\icono-js.png">
+
+               <img class="img-header" src="D:\Sublime Text\diseño web\programacion-com\css\media\imagenes\icono-php.png">
+          </header>
+     	</div>
+
+     	<div class="aside-container">
+
+     	     <aside class="aside-left">
+                    <img class="img-header2" src="D:\Sublime Text\diseño web\programacion-com\css\media\imagenes\icono-html.png" usemap="#html">
+                 <map name="html">
+                 <area shape="rect" coords="50,50,150,150" href="D:\Sublime Text\diseño web\programacion-com\html\paginas\inicio-html.html">
+     	     <nav>
+                     <div class="Formularios-nav">
+          			<form class="form-header" action="search.php">
+                     <input class="input-text" type="text">
+                     <input class="input-buscar" type="submit" value="Buscar">
+                         </form>
+                    </div>
+               </nav>
+     		    <div class="accesos-rapidos">
+     		    	 <a class="a-aside-left" href="D:\Sublime Text\diseño web\programacion-com\inicio web.html">Inicio</a>
+                     <a class="a-aside-left" href="D:\Sublime Text\diseño web\programacion-com\html\paginas\inicio-html.html">Atras</a>
+                     <a class="a-aside-left" href="#title-nav">Que es script</a>
+                     <a class="a-aside-left" href="#ejemplo-nav">Ejemplo</a>
+                 </div>
+     	     </aside>
+
+          </div>
+
+     	<div class="container-article">
+     		<article>
+     		    <section class="info" id="inicio-nav">
+     		    	                                                
+
+     			<h2 class="h2-head">Elemento HTML <br> (<span><</span>script<span>></span>)</h2> 
+
+     			<h3 class="h3-head" id="title-nav">Que es <span><</span>script<span>></span></h3>
+
+                    <p>El elemento <span><</span><b class="color-rojo">script</b><span>></span> se utiliza para insertar o hacer referencia a un script ejecutable dentro de un documento HTML o XHTML.</p>
+
+                    <p>Los script sin atributo <b>asyc</b> o <b>defer</b>, asi como las secuancias de comandos en linea, son interpretados y ejecutados inmediatamente, antes de que el navegador continúe procesando la página.</p>
+
+                    <h3 class="h3-head">Uso:</h3>
+
+                    <p>El elemento <span><</span><b class="color-rojo">script</b><span>></span> debe utilizarse en el <span><</span>head<span>></span></p>
+                    <p><b>Contenido permitido:</b> Script dinámico tal como <b>text/javascript</b></p>
+
+                    <h3 class="h3-head">atributos:</h3>
+                      
+                      <p>Este elemento contiene los atributos globales..</p>
+                    <div class="tabla">
+                      <table>
+                           <tr>
+                                <td>Atributo</td> <td>Descripción</td> 
+                           </tr>
+
+                           <tr>
+                                <td>async</td> 
+                                <td>Establece este atributo booleano para indicar la navegador, si es posible, ejecutar el código asincrónicamente. Esto no afecta a los scripts escritos dentro de la etiqueta {es decir a aquellos que no tienen el atributo <b>src</b>}</td> 
+                                
+                           </tr>
+
+                           <tr>
+                                <td>integrity</td> 
+                                <td>Contiene información de metadatos que es usada por el user agent del navegador para verificar el recurso caprado fue entregado libre de manipulación inesperada.</td> 
+                                
+                           </tr>
+
+                           <tr>
+                                <td>src</td> 
+                                <td>Este atrivuto especifica la URL del script externo; este puede ser usado como alternativa a scripts embebidos directamente en el documento. Si el script tiene el atributo src, no deberia tener código dentro de la etiqueta.</td> 
+                                
+                           </tr>
+
+                           <tr>
+                                <td>type</td> 
+                                <td>Este atributo identifica el lenguaje de scripting en que está escrito el código embebido dentro de la etiqueta script, p referenciada utilizando el atributo src. Los valores posibles están especificados como un MME type {tipo MIME}. Algunos ejemplos de tipo de MIME que pueden ser utilizados son: <b>text/javascript</b>, <b>text/ecmascript</b>, <b>application/javascript</b>, <b>application/ecmascript</b>. Se el atributo se encuantra ausente, el valor por defecto será un script JavaScript.</td> 
+                                
+                           </tr>
+
+                           <tr>
+                                <td>text</td> 
+                                <td>Este atributo actúa como el atributo <b>textContent</b>, establece el texto contenido del elemento. Pero a diferencia de <b>textContent</b>, este atributo se evalúa como ejecutable luego de ser insertado como nodo en el DOM.</td> 
+                                
+                           </tr>
+
+                           <tr>
+                                <td>language</td> 
+                                <td>Este atributo actúa como el atributo <b>type</b>, identifica el tipo de lenguaje que se utiliza. A diferencia del atributo <b>type</b>, los posibles valores de este atributo nunca fueron estandarizados. El atributo <b>type</b> debe ser utilizado en lugar de <b>language</b>.</td> 
+                                
+                           </tr>
+
+                           <tr>
+                                <td>defer</td> 
+                                <td>Este atributo establece si el script debe ser ejecutado luego de que el documento entero sea analizado. Dado que esta función aún no fue implementada por todos los navegadores relevantes, los autores no deberian asumir que el script realmente será ejecutando luego de la carga y analisis del documento. Desde Gecko 1.9.2 el atributo defer es ignorado en los scripts que no tienen el atributo src. Sin embargo, en Gecko 1.9.1 incluso se difieren los scripts escritos dentro de la etiqueta.</td> 
+                                
+                           </tr>
+
+                           <tr>
+                                <td>crossorigin</td> 
+                                <td>Elementos normales script pasan información minima al <b>window.onerror</b> para scripts que no pasan las revisiones del estándar <b>CORS</b>. Para permitir registrar errores en los sitios que usan dominios separados para recursos estáticos, usar este atributo.</td> 
+                           </tr>
+                      </table>
+                      </div>
+
+                    <div class="box-ejemplos">
+                         <h3 class="h3-head" id="ejemplo-nav">Ejemplos:</h3>
+                         <div class="box-ejemplo-codigo">
+                                                         <h5>Código</h5>
+
+                    <ol>
+                        <li>
+                                <span><</span><b>html</b><span>></span> <br>
+                                <span><</span><b>head</b><span>></span> <br>
+
+                                <ol>
+                                     <span><</span><b>meta</b> charset="utf-8"<span>></span> <br>
+                                     <span><</span><b>meta</b> name="viewport" content="width=device-width, initial-scale=1"<span>></span> <br>
+                                     <span><</span><b class="color-rojo">scripts</b> type="text/javascript"<span>></span><br>
+
+                                     <b class="color-celeste">function</b> <b class="color-verde">calc</b>( ){<br>
+                                     <b class="color-celeste">var</b> argOne<b class="color-rojo">=</b><b class="color-celeste">document</b>.<b class="color-celeste">getElementById</b>(<b class="color-amarillo">'arg1'</b>).value;<br>
+
+                                     <b class="color-celeste">var</b> argTwo<b class="color-rojo">=</b><b class="color-celeste">document</b>.<b class="color-celeste">getElementById</b>(<b class="color-amarillo">'arg2'</b>).value;<br>
+
+                                     <b class="color-celeste">var</b> ans<b class="color-rojo">=</b>(argOne<b class="color-rojo">=</b>argTwo);<br>
+
+                                     <b class="color-celeste">document</b>.<b class="color-celeste">getElementById</b>(<b class="color-amarillo">'result'</b>).innerHTML<b class="color-rojo">=</b>argOne <b class="color-rojo">+</b> <b class="color-amarillo">' multiplicado por '</b> <b class="color-rojo">+</b> argTwo <b class="color-rojo">+</b> <b class="color-amarillo">' es igual a '</b> <b class="color-rojo">+</b> ans;<br>
+                                     }<br>
+                                     <span><</span>/<b class="color-rojo">scripts</b><span>></span><br>
+                                   <span><</span><b>title</b><span>></span><span><</span>/<b>title</b><span>></span><br>
+                                </ol>
+
+                                <span><</span>/<b>head</b><span>></span> <br>
+                                <span><</span><b>body</b><span>></span> <br>
+                                 
+                                 <ol>
+                                      <lu><span><</span><b>h1</b><span>></span>               Calculadora
+                                         <span><</span>/<b>h1</b><span>></span>
+                                     </lu>
+                                      <lu>
+                                           <span><</span><b>input</b><span> type="text" id="arg1" size="1"></span>               x
+                                           <span><</span><b>input</b><span> type="text" id="arg2" size="1"></span><br>
+
+                                           <span><</span><b>input</b><span> type="button" value="Calcular!" onclick="calc( )"></span><br>
+
+                                           <span><</span><b>div</b> id="result"<span>></span>
+                                           <span><</span>/<b>div</b><span>></span>
+                                      </lu>
+                                      <lu></lu>
+                                      <lu></lu>
+                                 </ol>
+
+                                <span><</span>/<b>body</b><span>></span> <br>
+                                <span><</span><b>html</b><span>></span>
+                         </li>
+                    </ol>
+                         </div>
+                         <div class="box-ejemplo-visual">
+                                                         <h5>Como se veria:</h5>
+                                   <iframe class="ejemplo-de-web" src="D:\Sublime Text\diseño web\programacion-com\html\media\objetos\ejemplo-script.html">ejemplo</iframe>
+                         </div>
+                    </div>
+                   </section>
+              </article>
+     	</div>
+
+     	<!---<div class="aside-raight">
+               <aside>
+               	<h3>Otros lenguajes de programacion</h3>
+
+               	<img class="img-aside-raight" src="D:\Sublime Text\diseño web\programacion-com\css\media\imagenes\icono-inicio.png">
+
+               	<img class="img-aside-raight" src="D:\Sublime Text\diseño web\programacion-com\css\media\imagenes\icono-css.png">
+
+               	<img class="img-aside-raight" src="D:\Sublime Text\diseño web\programacion-com\css\media\imagenes\icono-js.png">
+
+               	<img class="img-aside-raight" src="D:\Sublime Text\diseño web\programacion-com\css\media\imagenes\icono-php.png">
+               </aside>
+     	</div>--->
+     
+     	<div class="container-footer">
+     		<footer>
+     			<h5>Deep Doom <br> (Jeremias Franco) </h5>
+     		</footer>
+     	</div>
+     	
+     </div>
+
+
+</body>
+</html>
